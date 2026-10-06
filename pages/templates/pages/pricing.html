@@ -1,0 +1,3 @@
+{% extends "pages/base.html" %}
+{% block title %}Pricing - Django Pages{% endblock %}
+{% block content %}<h1>Pricing</h1><ul>{% for name, price in plans %}<li>{{ name }}: {{ price }} per month</li>{% endfor %}</ul>{% endblock %}
